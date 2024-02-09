@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 788px;
+  min-height: 100vh;
+  background-color: black;
+  overflow-y: auto;
+  padding: 0px 5px;
+}
+.card {
+  display: flex;
+  align-items: center;
+  height: 106px;
+  border-radius: 12px;
+}
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.169);
+}
+.card:hover .menu {
+  visibility: visible;
+}
+.num {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(170, 170, 170);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 36px;
+}
+.main {
+  display: flex;
+  min-height: 90px;
+  min-width: 712px;
+  padding: 8px 0;
+}
+.thumbnail {
+  position: relative;
+  border-radius: 8px;
+  min-width: 160px;
+  margin-right: 8px;
+  background-size: contain;
+}
+.thumbnail .dura {
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  padding: 3px 4px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+.content {
+  min-width: 544px;
+}
+.content h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(241, 241, 241);
+  margin-bottom: 8px;
+}
+.content .other {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(170, 170, 170);
+}
+.menu {
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  max-height: 40px;
+}
+.menu .menu_button {
+  width: 24px;
+  height: 24px;
+}
